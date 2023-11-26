@@ -14,8 +14,6 @@ export class GamePlay extends PixiScene {
   constructor() {
     super({ origX: Config.halfWidth, origY: Config.halfHeight, scale: ScaleTypes.Scale });
     this.onCreate = this.onCreate.bind(this);
-
-    window.store.subscribe(this.onUpdate.bind(this));
   }
 
   hide() {
