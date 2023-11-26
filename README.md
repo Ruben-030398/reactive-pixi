@@ -34,16 +34,14 @@ export class GamePlay extends PixiScene {
     // Your hide logic here
   }
 
-  onCreate(state?: GameState): void {
+  onCreate(): void {
     const counter = new Counter();
 
     this.mount(counter, state => state.counter);
   }
 
   show() {
-    const state = window.store.getState();
-
-    this.onCreate(state);
+    this.onCreate();
   }
 }
 ```
