@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "baseUrl": ".",
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"downlevelIteration": true,
+		"target": "es6",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types"], // ** custom ones should go here "src/@types"
+  },
+  "include": [
+    "src/**/*",
+    "types/index.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}
