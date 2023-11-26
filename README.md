@@ -4,7 +4,7 @@ This PixiJS boilerplate provides pre-built components for common game elements a
 
 ## Components
 
-- **PixiAnimatedSprite.ts**
+- **PixiAnimatedSprite**
 - **PixiButton**
 - **PixiContainer**
 - **PixiDialog**
@@ -28,7 +28,6 @@ export class GamePlay extends PixiScene {
   constructor() {
     super({ origX: Config.halfWidth, origY: Config.halfHeight, scale: ScaleTypes.Scale });
     this.onCreate = this.onCreate.bind(this);
-
   }
 
   hide() {
